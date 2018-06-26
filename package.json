@@ -27,7 +27,8 @@
     "test-js-server": "tape -r babel-register \"server/**/*.test.js\" | tap-spec",
     "test": "npm run test-js && npm run test-challenges",
     "cover": "babel-node ./node_modules/.bin/babel-istanbul cover tape common/**/*.test.js",
-    "coveralls": "npm run cover && istanbul-coveralls"
+    "coveralls": "npm run cover && istanbul-coveralls",
+    "prepare": "npm run snyk-protect"
   },
   "license": "(BSD-3-Clause AND CC-BY-SA-4.0)",
   "dependencies": {
@@ -114,7 +115,7 @@
     "reselect": "^2.0.2",
     "rx": "^4.0.0",
     "sanitize-html": "^1.11.1",
-    "snyk": "^1.19.1",
+    "snyk": "^1.85.0",
     "store": "https://github.com/berkeleytrue/store.js.git#feature/noop-server",
     "uuid": "^3.0.1",
     "validator": "^6.0.0"
